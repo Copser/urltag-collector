@@ -12,11 +12,16 @@
     }
   ],
   "background": {
-    "scripts": ["background.js"]
+    "scripts": ["background.js"],
+    "persistent": false
   },
   "page_action": {
     "default_title": "URLTC",
     "default_popup": "popup.html",
     "default_icon": "SdUGT.png"
-  }
+  },
+  "permissions": [
+    "activeTab",
+    "*://*/*"
+  ]
 }
